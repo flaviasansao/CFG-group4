@@ -2,7 +2,7 @@
 
 /* header */
 :root {
-    --background: rgba(241, 93, 94, 1);
+    --background: rgb(241, 93, 94);
   }
   
   *, *::before, *::after {
@@ -428,7 +428,7 @@ textarea {
 }
 
 footer {
-   background-color: rgba(241, 93, 94);   
+   background-color: rgb(241, 93, 94);   
    font-family: 'Roboto', sans-serif;
    font-weight: 300;
    display: flex;
