@@ -343,6 +343,9 @@ textarea {
   width: 100%;
 }
 
+.dot-free {
+    list-style-type: none;}
+
 .errorContainer {
   color: red;
   font-weight: bold;
