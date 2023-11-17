@@ -420,16 +420,15 @@ textarea {
   font-size: 16px;
 }
 
+@media only screen and (width < 990px) {
+    #hideDiv {
+        display: none;
+    }
+}
 
 /* end of contact */
 
 /* footer */
-
-* {
-  padding: 0;
-  margin: 0;
-}
-
 footer {
    background-color: rgb(241, 93, 94);   
    font-family: 'Roboto', sans-serif;
