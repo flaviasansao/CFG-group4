@@ -12,23 +12,24 @@
 
 <!--The classes required for the code to run properly are requiredInfo and collapse. As in the other
 file, IDs should also not be changed.-->
+<header>
+    <img src="./CFG logo.png" alt="logo" class="logo">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
 
-<body>
-    <header>
-        <img src="./CFG logo.png" alt="logo" class="logo">
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="donations.html">Donate</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <label for="nav-toggle" class="nav-toggle-label">
-            <span></span>
-        </label>
-    </header>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./donate.html">Donate</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+    </label>
+</header>
+
+<body class="contbody">
     <div class="col-sm-7">
         <div id="mainContact">
             <h1>Get in Touch with Warm Together</h1>
@@ -65,25 +66,27 @@ file, IDs should also not be changed.-->
         <img src="childreninhats.jpg" class="contactImage"><br>
         <img src="boxofclothes.jpg" class="contactImage">
     </div>
-    <footer>
-        <img src="logo.png" alt="logo" class=footerLogo"">
-        <div class="footerRight">
-            <div class="footerNav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="donations.html">Donate</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footerText">
-                <p>&copy;2023 Code First Girls</p>
-                <p>Designed by Flavia M, Laura K, Melissa A, Cat M, Erika F</p>
-            </div>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="contact.js"></script>
-    </footer>
+
+    
 </body>
+
+<footer>
+    <img src="./CFG logo.png" alt="logo" class="footerLogo">
+    <div class="footerRight">
+        <div class="footerNav">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./donate.html">Donate</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footerText">
+            <p class="footp">&copy;2023 Code First Girls</p>
+            <p class="footp">Designed by Flavia M, Laura K, Melissa A, Cat M, Erika F</p>
+        </div>
+    </div>
+
+</footer>
 
 </html>
