@@ -16,7 +16,7 @@
 
 /*1. Elements*/
 body {
-    background-color: rgb(218, 239, 235);
+    background-color: linear-gradient(45deg, rgb(252, 208, 198) 15%, rgb(254, 221, 186));
 }
 
 select {
@@ -61,18 +61,30 @@ textarea {
     font-weight: normal;
 }
 
-.gimme-red {
-    background-color: rgb(180, 37, 37);
-    color: rgb(150, 211, 210);
-    padding: 5px;
-    border: none;
-    border-radius: 12px;
+Button {
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    padding: 10px;
+    margin: 0px auto;
+    line-height: 10px;
+    background-color: bisque;
+    color: black;
+    border: 5px solid rgb(170, 170, 238);
+    border-color: bisque;
+    border-radius: 25px 25px 25px 25px;
+    text-decoration: none;
+    box-shadow: 5px 5px 10px grey;
+    transition: all 200ms ease;
 }
 
-.gimme-red:hover {
-    color: rgb(180, 37, 37);
-    background-color: rgb(150, 211, 210);
-}
+button:hover {
+    background-color: rgba(241, 93, 94);
+    border-color: rgba(241, 93, 94);
+    color: aliceblue;
+    box-shadow: 2px 2px 30px rgb(255, 198, 113);
+    cursor: pointer;
 
 .gimme-space {
     margin: 20px 20px 20px 0px;
@@ -148,7 +160,7 @@ textarea {
 }
 
 :root {
-    --background: rgba(180, 37, 37, 1);
+    --background: rgba(241, 93, 94, 1);
 }
 
 *,
@@ -159,7 +171,7 @@ textarea {
 
 body {
     margin: 0;
-    background: rgb(218, 239, 235);
+    background: linear-gradient(45deg, rgb(252, 208, 198) 15%, rgb(254, 221, 186));
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
@@ -320,7 +332,7 @@ nav a:hover {
 
 /*5. Header and footer*/
 footer {
-    background-color: rgb(180, 37, 37);
+    background-color: rgba(241, 93, 94, 1);
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     display: flex;
