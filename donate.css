@@ -16,7 +16,7 @@
 
 /*1. Elements*/
 body {
-    background-color: linear-gradient(45deg, rgb(252, 208, 198) 15%, rgb(254, 221, 186));
+    background-color: rgb(218, 239, 235);
 }
 
 select {
@@ -61,30 +61,18 @@ textarea {
     font-weight: normal;
 }
 
-Button {
-    font-size: 18px;
-    display: block;
-    text-align: center;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    padding: 10px;
-    margin: 0px auto;
-    line-height: 10px;
-    background-color: bisque;
-    color: black;
-    border: 5px solid rgb(170, 170, 238);
-    border-color: bisque;
-    border-radius: 25px 25px 25px 25px;
-    text-decoration: none;
-    box-shadow: 5px 5px 10px grey;
-    transition: all 200ms ease;
+.gimme-red {
+    background-color: rgb(180, 37, 37);
+    color: rgb(150, 211, 210);
+    padding: 5px;
+    border: none;
+    border-radius: 12px;
 }
 
-button:hover {
-    background-color: rgba(241, 93, 94);
-    border-color: rgba(241, 93, 94);
-    color: aliceblue;
-    box-shadow: 2px 2px 30px rgb(255, 198, 113);
-    cursor: pointer;
+.gimme-red:hover {
+    color: rgb(180, 37, 37);
+    background-color: rgb(150, 211, 210);
+}
 
 .gimme-space {
     margin: 20px 20px 20px 0px;
@@ -160,39 +148,41 @@ button:hover {
 }
 
 :root {
-    --background: rgba(241, 93, 94, 1);
-  }
-  
-  *, *::before, *::after {
+    --background: rgba(180, 37, 37, 1);
+}
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-  }
-  
+}
+
 body {
     margin: 0;
-    background: linear-gradient(45deg, rgb(252, 208, 198) 15%, rgb(254, 221, 186));
+    background: rgb(218, 239, 235);
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
-    
-  header {
+
+
+header {
     background: var(--background);
     text-align: center;
-    position: relative;
     z-index: 999;
     width: 100%;
-  }
+}
 
-  .logo {
+.logo {
     width: 133px;
     height: 122px;
     object-fit: contain;
-  }
+}
 
-  .nav-toggle {
+.nav-toggle {
     display: none;
-  }
+}
 
-  .nav-toggle-label {
+.nav-toggle-label {
     position: absolute;
     top: 0;
     left: 0;
@@ -200,34 +190,34 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-  }
+}
 
-  .nav-toggle-label span,
-  .nav-toggle-label span::before,
-  .nav-toggle-label span::after {
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
     display: block;
     background: white;
     height: 2px;
     width: 2em;
     border-radius: 2px;
     position: relative;
-  }
+}
 
-  .nav-toggle-label span::before,
-  .nav-toggle-label span::after {
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
     content: '';
     position: absolute;
-  }
+}
 
-  .nav-toggle-label span::before {
+.nav-toggle-label span::before {
     bottom: 7px;
-  }
+}
 
-  .nav-toggle-label span::after {
+.nav-toggle-label span::after {
     top: 7px;
-  }
+}
 
-  nav {
+nav {
     position: absolute;
     text-align: left;
     top: 100%;
@@ -237,44 +227,44 @@ body {
     transform: scale(1, 0);
     transform-origin: top;
     transition: transform 400ms ease-in-out;
-  }
+}
 
-  nav ul {
+nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
-  }
-  
-  nav li {
+}
+
+nav li {
     margin-bottom: 1em;
     margin-left: 1em;
-  }
+}
 
-  nav a {
+nav a {
     color: rgb(150, 211, 210);
     text-decoration: none;
     font-size: 1.2rem;
     text-transform: uppercase;
     opacity: 0;
     transition: opacity 150ms ease-in-out;
-  }
+}
 
-  nav a:hover {
+nav a:hover {
     color: rgb(218, 239, 235);
-  }
+}
 
-  .nav-toggle:checked ~ nav {
-    transform: scale(1,1);
-  }
+.nav-toggle:checked~nav {
+    transform: scale(1, 1);
+}
 
-  .nav-toggle:checked ~ nav a {
+.nav-toggle:checked~nav a {
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
-  }
+}
 
 
 
-  @media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) {
     .nav-toggle-label {
         display: none;
     }
@@ -319,24 +309,23 @@ body {
         bottom: -.75em;
         left: 0;
         right: 0;
-        transform: scale(0,1);
+        transform: scale(0, 1);
         transition: transform ease-in-out 250ms;
     }
 
     nav a:hover::before {
-        transform: scale(1,1);
+        transform: scale(1, 1);
     }
-  }
+}
 
 /*5. Header and footer*/
-
 footer {
-   background-color: rgba(241, 93, 94);   
-   font-family: 'Roboto', sans-serif;
-   font-weight: 300;
-   display: flex;
-   justify-content: space-around;
-   height: 200px;
+    background-color: rgb(180, 37, 37);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
     bottom: 0;
     width: 100%;
     padding: 0;
@@ -344,40 +333,39 @@ footer {
 }
 
 .footerLogo {
-  margin: 30px;
-  padding: 20px;
+    margin: 30px;
+    padding: 20px;
 }
 
 .footerRight {
-  justify-content: center;
+    justify-content: center;
 }
 
 .footerNav {
-  margin: 20px 0;
-  padding: 20px;
+    margin: 20px 0;
+    padding: 20px;
 }
 
 .footerNav ul {
-  font-size: 12px;
-  display: flex;
-  justify-content: center;
-  list-style: none;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
 }
 
 .footerNav ul li a {
-  color: rgb(150, 211, 210);
-  margin: 20px;
-  text-decoration: none;
-  font-size: 1.3em;
-  transition: 0.5s;
+    color: rgb(150, 211, 210);
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: 0.5s;
 }
 
 .footerNav ul li a:hover {
-  color: white;
+    color: white;
 }
 
 .footerText {
-  color: white;
-  padding: 20px;
-  text-align: center;
+    color: white;
+    text-align: center;
 }
