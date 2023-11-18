@@ -12,80 +12,84 @@
 
 <!--The classes required for the code to run properly are requiredInfo and collapse. As in the other
 file, IDs should also not be changed.-->
-<header>
-    <img src="./CFG logo.png" alt="logo" class="logo">
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <nav>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./donate.html">Donate</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <label for="nav-toggle" class="nav-toggle-label">
-        <span></span>
-    </label>
-</header>
 
-<body class="contbody">
-    <div class="col-sm-7">
-        <div id="mainContact">
-            <h1>Get in Touch with Warm Together</h1>
-            <div class="gimme-space">
-                <p>Call us: 0100 000 0000</p>
-                <p>Email us: <a href="mailto:someone@example.com">contact@warmtogether.co.uk</a></p>
-            </div>
-            <br>
-            <div class="gimme-space">
-                <h4>Or fill out our contact form below and we'll get back to you as soon as we can:</h4>
-                <p class="requirement">* indicates a required field.</p>
-                <label for="firstName">*First name: &nbsp;</label><input type="text" id="firstName"
-                    class="requiredInfo">
-                <label for="lastName">*Last name: &nbsp;</label><input type="text" id="lastName"
-                    class="requiredInfo"><br>
-                <label for="email">*Email address: &nbsp;</label><input id="email" type="text" class="requiredInfo"><br>
-                <label for="phoneNumber">*Phone number: &nbsp;</label><input type="text" id="phoneNumber"
-                    class="requiredInfo"><br><br>
-                <label for="messageSpace">*Write your message here: </label><br>
-                <div class="row">
-                    <textarea rows="4" id="messageSpace" class="col-xs-9 requiredInfo"></textarea><br>
-                </div>
-            </div>
-            <div id="detailsErrorContainer" class="collapse errorContainer">Please add all required information.
-            </div><br>
-            <button id="contactWT" class="gimme-red">Get in touch</button>
-        </div>
-        <div class="gimme-space">
-            <p id="contactMessage" class="collapse">Thanks for your message! You'll hear from us soon.</p>
-        </div>
-    </div>
-
-    <div class="imgContainer col-sm-5" id="hideDiv">
-        <img src="childreninhats.jpg" class="contactImage"><br>
-        <img src="boxofclothes.jpg" class="contactImage">
-    </div>
-
-
-</body>
-
-<footer>
-    <img src="./CFG logo.png" alt="logo" class="footerLogo">
-    <div class="footerRight">
-        <div class="footerNav">
+<body class="contbody hamburger">
+    <header>
+        <img src="./CFG logo.png" alt="logo" class="logo">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./donate.html">Donate</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+    <main>
+        <div class="col-sm-7">
+            <div id="mainContact">
+                <h1>Get in Touch with Warm Together</h1>
+                <div class="gimme-space">
+                    <p>Call us: 0100 000 0000</p>
+                    <p>Email us: <a href="mailto:someone@example.com">contact@warmtogether.co.uk</a></p>
+                </div>
+                <br>
+                <div class="gimme-space">
+                    <h4>Or fill out our contact form below and we'll get back to you as soon as we can:</h4>
+                    <p class="requirement">* indicates a required field.</p>
+                    <label for="firstName">*First name: &nbsp;</label><input type="text" id="firstName"
+                        class="requiredInfo">
+                    <label for="lastName">*Last name: &nbsp;</label><input type="text" id="lastName"
+                        class="requiredInfo"><br>
+                    <label for="email">*Email address: &nbsp;</label><input id="email" type="text"
+                        class="requiredInfo"><br>
+                    <label for="phoneNumber">*Phone number: &nbsp;</label><input type="text" id="phoneNumber"
+                        class="requiredInfo"><br><br>
+                    <label for="messageSpace">*Write your message here: </label><br>
+                    <div class="row">
+                        <textarea rows="4" id="messageSpace" class="col-xs-9 requiredInfo"></textarea><br>
+                    </div>
+                </div>
+                <div id="detailsErrorContainer" class="collapse errorContainer">Please add all required information.
+                </div><br>
+                <button id="contactWT" class="gimme-red">Get in touch</button>
+            </div>
+            <div class="gimme-space">
+                <p id="contactMessage" class="collapse">Thanks for your message! You'll hear from us soon.</p>
+            </div>
         </div>
-        <div class="footerText">
-            <p class="footp">&copy;2023 Code First Girls</p>
-            <p class="footp">Designed by Flavia M, Laura K, Melissa A, Cat M, Erika F</p>
-        </div>
-    </div>
 
-</footer>
+        <div class="imgContainer col-sm-5" id="hideDiv">
+            <img src="childreninhats.jpg" class="contactImage"><br>
+            <img src="boxofclothes.jpg" class="contactImage">
+        </div>
+    </main>
+    <footer>
+        <img src="./CFG logo.png" alt="logo" class="footerLogo">
+        <div class="footerRight">
+            <div class="footerNav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./donate.html">Donate</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footerText">
+                <p class="footp">&copy;2023 Code First Girls</p>
+                <p class="footp">Designed by Flavia M, Laura K, Melissa A, Cat M, Erika F</p>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="contact.js"></script>
+    </footer>
+
+</body>
+
+
 
 </html>
