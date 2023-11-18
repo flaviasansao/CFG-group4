@@ -167,7 +167,13 @@ button:hover {
     box-sizing: border-box;
   }
   
-
+body {
+    margin: 0;
+    background: linear-gradient(45deg, rgb(252, 208, 198) 15%, rgb(254, 221, 186));
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+    
   header {
     background: var(--background);
     text-align: center;
@@ -323,10 +329,6 @@ button:hover {
   }
 
 /*5. Header and footer*/
-* {
-  padding: 0;
-  margin: 0;
-}
 
 footer {
    background-color: rgba(241, 93, 94);   
@@ -335,6 +337,10 @@ footer {
    display: flex;
    justify-content: space-around;
    height: 200px;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+    margin-bottom: -50px;
 }
 
 .footerLogo {
