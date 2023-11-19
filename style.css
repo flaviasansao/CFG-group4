@@ -359,6 +359,8 @@ textarea {
 
 .full-page {
   width: 100% !important;
+  display: flex;
+  flex-direction: row;
 }
 
 .gimme-space {
@@ -367,6 +369,8 @@ textarea {
 
 .grey {
   background-color: rgb(150, 211, 210);
+  border-radius: 0px !important;
+  min-width: 150px;
 }
 
 .hamburger {
@@ -382,6 +386,17 @@ textarea {
   border: none;
   background-color: rgb(150, 211, 210);
   padding: 10px;
+}
+
+.imgContainer {
+  right: 0px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.mainDiv {
+  padding: 10px;
+  min-width: 70%;
 }
 
 .requirement {

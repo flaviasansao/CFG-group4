@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donations</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
-<!-- Classes needed for the script to work correctly: active, collapse, requiredInfo, requiredCard. 
+<!-- Classes needed for the script to work correctly: active, hidden, requiredInfo, requiredCard. 
     hideDiv is needed so that the pictures disappear on smaller screen widths.
     Please don't modify these in any way. IDs should also all stay the same.-->
 
@@ -31,19 +30,17 @@
         </label>
     </header>
     <main class="full-page">
-        <ul class="sidebar col-md-2 col-xs-3" id="navbar">
-            <navbar class="list-group list-group-flush sidebar-expanded">
-                <li><button id="donationLink"
-                        class="hiddenButton list-group-item list-group-item-action py-2 active grey">Your
+        <ul class="sidebar" id="navbar">
+            <navbar>
+                <li><button id="donationLink" class="hiddenButton active grey">Your
                         donation</button></li>
-                <li><button id="aboutLink" class="hiddenButton list-group-item list-group-item-action py-2 grey">Your
+                <li><button id="aboutLink" class="hiddenButton grey">Your
                         details</button></li>
-                <li><button id="summaryLink"
-                        class="hiddenButton list-group-item list-group-item-action py-2 grey">Summary</button></li>
+                <li><button id="summaryLink" class="hiddenButton grey">Summary</button></li>
             </navbar>
         </ul>
-        <div class="col-sm-7 col-xs-9">
-            <h1>Donate to Warm Together</h1>
+        <div class="mainDiv">
+            <h1>Donate to Us</h1>
 
             <div id="aboutDonation">
                 <div class="gimme-space">
@@ -74,12 +71,12 @@
 
                     </div>
                 </div>
-                <div id="donationErrorContainer" class="collapse errorContainer gimme-space">
+                <div id="donationErrorContainer" class="hidden errorContainer gimme-space">
                 </div>
                 <button id="continueToDetails" class="gimme-space gimme-red">Continue</button>
             </div>
 
-            <div id="aboutYou" class="collapse">
+            <div id="aboutYou" class="hidden">
                 <div class="gimme-space">
                     <p class="requirement">* indicates a required field.</p>
                     <label for="firstName">*First name &nbsp;</label><input type="text" id="firstName"
@@ -113,13 +110,13 @@
                     <label>*Postcode &nbsp;</label>
                     <input id="postcode" type="text" class="requiredInfo"><br>
                 </div>
-                <div id="detailsErrorContainer" class="collapse errorContainer gimme-space">Please add all required
+                <div id="detailsErrorContainer" class="hidden errorContainer gimme-space">Please add all required
                     information.
                 </div>
                 <button id="backToDonation" class="gimme-red">Back</button><br>
                 <button id="continueToSummary" class="gimme-red bottom-space">Continue</button>
             </div>
-            <div id="summary" class="collapse">
+            <div id="summary" class="hidden">
                 <div class="centred">
                     <div id="donationSummary" class="gimme-space">
                         <p>Donation summary:</p>
@@ -138,7 +135,7 @@
                         class="requiredCard"><br>
                     <label for="cardCVV">*CVV &nbsp;</label><input type="password" id="cardCVV"
                         class="requiredCard"><br>
-                    <div id="summaryErrorContainer" class="collapse errorContainer gimme-space">
+                    <div id="summaryErrorContainer" class="hidden errorContainer gimme-space">
                     </div>
                 </div>
                 <br>
@@ -146,14 +143,14 @@
                 <button id="donateButton" class="gimme-red bottom-space">Make Donation</button>
                 <br>
             </div>
-            <div id="thanksDiv" class="collapse gimme-space">
+            <div id="thanksDiv" class="hidden gimme-space">
                 <div id="thanksMessage" class="gimme-space">
                 </div>
                 <img src="thankyou.jpg" id="thanksImage">
             </div>
 
         </div>
-        <div class="col-md-3" id="hideDiv"><img src="pileofcoats.jpg"></div>
+        <div id="hideDiv"><img src="pileofcoats.jpg"></div>
     </main>
     <footer>
         <img src="./CFG logo.png" alt="logo" class="footerLogo">

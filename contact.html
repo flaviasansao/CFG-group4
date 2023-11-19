@@ -4,13 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Contact</title>
 </head>
 
-<!--The classes required for the code to run properly are requiredInfo and collapse. As in the other
+<!--The classes required for the code to run properly are requiredInfo and hidden. As in the other
 file, IDs should also not be changed.-->
 
 <body class="contbody hamburger">
@@ -29,41 +27,38 @@ file, IDs should also not be changed.-->
             <span></span>
         </label>
     </header>
-    <main>
-        <div class="col-sm-7">
-            <div id="mainContact">
-                <h1>Get in Touch with Warm Together</h1>
-                <div class="gimme-space">
-                    <p>Call us: 0100 000 0000</p>
-                    <p>Email us: <a href="mailto:someone@example.com">contact@warmtogether.co.uk</a></p>
-                </div>
-                <br>
-                <div class="gimme-space">
-                    <h4>Or fill out our contact form below and we'll get back to you as soon as we can:</h4>
-                    <p class="requirement">* indicates a required field.</p>
-                    <label for="firstName">*First name: &nbsp;</label><input type="text" id="firstName"
-                        class="requiredInfo">
-                    <label for="lastName">*Last name: &nbsp;</label><input type="text" id="lastName"
-                        class="requiredInfo"><br>
-                    <label for="email">*Email address: &nbsp;</label><input id="email" type="text"
-                        class="requiredInfo"><br>
-                    <label for="phoneNumber">*Phone number: &nbsp;</label><input type="text" id="phoneNumber"
-                        class="requiredInfo"><br><br>
-                    <label for="messageSpace">*Write your message here: </label><br>
-                    <div class="row">
-                        <textarea rows="4" id="messageSpace" class="col-xs-9 requiredInfo"></textarea><br>
-                    </div>
-                </div>
-                <div id="detailsErrorContainer" class="collapse errorContainer">Please add all required information.
-                </div><br>
-                <button id="contactWT" class="gimme-red">Get in touch</button>
-            </div>
+    <main class="full-page">
+        <div id="mainContact">
+            <h1>Get in Touch with Us</h1>
             <div class="gimme-space">
-                <p id="contactMessage" class="collapse">Thanks for your message! You'll hear from us soon.</p>
+                <p>Call us: 0100 000 0000</p>
+                <p>Email us: <a href="mailto:someone@example.com">contact@warmtogether.co.uk</a></p>
             </div>
+            <br>
+            <div class="gimme-space">
+                <h4>Or fill out our contact form below and we'll get back to you as soon as we can:</h4>
+                <p class="requirement">* indicates a required field.</p>
+                <label for="firstName">*First name: &nbsp;</label><input type="text" id="firstName"
+                    class="requiredInfo">
+                <label for="lastName">*Last name: &nbsp;</label><input type="text" id="lastName"
+                    class="requiredInfo"><br>
+                <label for="email">*Email address: &nbsp;</label><input id="email" type="text" class="requiredInfo"><br>
+                <label for="phoneNumber">*Phone number: &nbsp;</label><input type="text" id="phoneNumber"
+                    class="requiredInfo"><br><br>
+                <label for="messageSpace">*Write your message here: </label><br>
+                <div class="row">
+                    <textarea rows="4" id="messageSpace" class="col-xs-9 requiredInfo"></textarea><br>
+                </div>
+            </div>
+            <div id="detailsErrorContainer" class="hidden errorContainer">Please add all required information.
+            </div><br>
+            <button id="contactWT" class="gimme-red">Get in touch</button>
+        </div>
+        <div class="gimme-space">
+            <p id="contactMessage" class="hidden">Thanks for your message! You'll hear from us soon.</p>
         </div>
 
-        <div class="imgContainer col-sm-5" id="hideDiv">
+        <div class="imgContainer" id="hideDiv">
             <img src="childreninhats.jpg" class="contactImage"><br>
             <img src="boxofclothes.jpg" class="contactImage">
         </div>
