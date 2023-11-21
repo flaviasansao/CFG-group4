@@ -50,14 +50,14 @@
                 </div>
                 <div class="gimme-space">
                     <p class="requirement">* indicates a required field.</p>
-                    <p>*Is this a monthly or one-time donation?</p>
-                    <input type="radio" id="monthly" name="type" value="monthly"><label
+                    <p class="top-bottom-space">*Is this a monthly or one-time donation?</p>
+                    <input type="radio" id="monthly" name="type" value="monthly"><label class="top-bottom-space" 
                         for="monthly">&nbsp;Monthly</label><br>
-                    <input type="radio" id="oneTime" name="type" value="one-time"><label
+                    <input type="radio" id="oneTime" name="type" value="one-time"><label class="top-bottom-space" 
                         for="oneTime">&nbsp;One-time</label><br>
                 </div>
                 <div class="gimme-space">
-                    <label for="selectedAmount">*Select an amount to donate:&nbsp;</label><select id="selectedAmount"
+                    <label  class="top-bottom-space" for="selectedAmount">*Select an amount to donate:&nbsp;</label><select id="selectedAmount"
                         class="dropdown-toggle">
                         <option>Choose an amount</option>
                         <option>£10</option>
@@ -65,7 +65,7 @@
                         <option>£50</option>
                         <option>£100</option>
                     </select><br>
-                    <label for="manualAmount">Or enter manually (optional):&nbsp;</label>
+                    <label for="manualAmount" class="top-bottom-space">Or enter manually (optional):&nbsp;</label>
                     <div class="input-group col-xs-5"><span class="input-group-addon">£</span>
                         <input type="text" id="manualAmount" class="form-control" autocomplete="off"><br>
 
@@ -79,11 +79,11 @@
             <div id="aboutYou" class="hidden">
                 <div class="gimme-space">
                     <p class="requirement">* indicates a required field.</p>
-                    <label for="firstName">*First name &nbsp;</label><input type="text" id="firstName"
+                    <label for="firstName" class="top-bottom-space">*First name &nbsp;</label><input type="text" id="firstName"
                         class="requiredInfo"><br>
-                    <label for="lastName">*Last name &nbsp;</label><input type="text" id="lastName"
+                    <label for="lastName" class="top-bottom-space">*Last name &nbsp;</label><input type="text" id="lastName"
                         class="requiredInfo"><br>
-                    <label for="email">*Email address &nbsp;</label><input id="email" type="text"
+                    <label for="email" class="top-bottom-space">*Email address &nbsp;</label><input id="email" type="text"
                         class="requiredInfo"><br>
                 </div>
 
@@ -91,23 +91,23 @@
                     <p>Enter your postcode to search:</p>
                 </div>
                 <div class="gimme-space">
-                    <p>Or enter your address manually: </p>
-                    <label>*First address line &nbsp;</label>
+                    <p class="top-bottom-space">Or enter your address manually: </p>
+                    <label class="top-bottom-space">*First address line &nbsp;</label>
                     <input id="line1" type="text" class="requiredInfo"><br>
 
-                    <label>Second address line &nbsp;</label>
+                    <label class="top-bottom-space">Second address line &nbsp;</label>
                     <input id="line2" type="text"><br>
 
-                    <label>Third address line &nbsp;</label>
+                    <label class="top-bottom-space">Third address line &nbsp;</label>
                     <input id="line3" type="text"><br>
 
-                    <label>*Town &nbsp;</label>
+                    <label class="top-bottom-space">*Town &nbsp;</label>
                     <input id="town" type="text" class="requiredInfo"><br>
 
-                    <label>County &nbsp;</label>
+                    <label class="top-bottom-space">County &nbsp;</label>
                     <input id="county" type="text"><br>
 
-                    <label>*Postcode &nbsp;</label>
+                    <label class="top-bottom-space">*Postcode &nbsp;</label>
                     <input id="postcode" type="text" class="requiredInfo"><br>
                 </div>
                 <div id="detailsErrorContainer" class="hidden errorContainer gimme-space">Please add all required
@@ -127,13 +127,13 @@
                 <div id="paymentCard" class="gimme-space">
                     <h2 class="warning">THIS IS NOT A REAL WEBSITE. DO NOT ENTER ACTUAL CARD INFORMATION HERE.</h2>
                     <p class="requirement">* indicates a required field.</p>
-                    <label for="cardName">*Name on card &nbsp;</label><input type="text" id="cardName"
+                    <label for="cardName" class="top-bottom-space">*Name on card &nbsp;</label><input type="text" id="cardName"
                         class="requiredCard"><br>
-                    <label for="cardNumber">*Card number &nbsp;</label><input id="cardNumber" type="text"
+                    <label for="cardNumber" class="top-bottom-space">*Card number &nbsp;</label><input id="cardNumber" type="text"
                         id="cardNumber" class="requiredCard"><br>
-                    <label for="cardExpiry">*Expiry date &nbsp;</label><input type="text" id="cardExpiry"
+                    <label for="cardExpiry" class="top-bottom-space">*Expiry date &nbsp;</label><input type="text" id="cardExpiry"
                         class="requiredCard"><br>
-                    <label for="cardCVV">*CVV &nbsp;</label><input type="password" id="cardCVV"
+                    <label for="cardCVV" class="top-bottom-space">*CVV &nbsp;</label><input type="password" id="cardCVV"
                         class="requiredCard"><br>
                     <div id="summaryErrorContainer" class="hidden errorContainer gimme-space">
                     </div>
