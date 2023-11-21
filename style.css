@@ -411,9 +411,8 @@ textarea {
 }
 
 .top-bottom-space {
-  margin-top: 10px;
-  margin-bottom: 10px;
-color: red;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .warning {
